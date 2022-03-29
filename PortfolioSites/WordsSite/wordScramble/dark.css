@@ -26,22 +26,21 @@ h1{
 
 body{
     text-align: center;
-    background-color: white;
+    background-color: #212121;
     font-family: Roobert, sans-serif;
-    color: black;
+    color: white;
 }
 
 #lightSwitch{
     float: right;
-
 }
 
 .card{
     position: block;
-    background: #f2f2f2;
+    background: #303030;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     padding: 10px;
     width: auto;
     margin-left: 200px;
@@ -50,13 +49,13 @@ body{
 
 .card #header{
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 18pt;
     font-family: "Roobert-Bold";
 }
 
 .card #rules{
-    color: black;
+    color: white;
 }
 
 .container{
@@ -123,7 +122,7 @@ body{
     text-align: center;
     border-color: black;
     outline: none;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     border-style: none;
     font-family: "Roobert"
 }
@@ -142,7 +141,7 @@ body{
 
 .easy{
     background-color: rgb(81, 216, 81);
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     border-radius: 10px;
     width: 8.5em;
     height: 8.5em;
@@ -152,7 +151,7 @@ body{
 
 .play{
     border-radius: 10px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     background-color:rgb(255, 255, 255);
     font-family: Ubuntu, sans-serif;
     font-weight: bold;
@@ -165,7 +164,7 @@ body{
 
 .submit{
     border-radius: 10px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     background-color:rgb(255, 255, 255);
     font-family: Ubuntu, sans-serif;
     font-weight: bold;
@@ -179,7 +178,7 @@ body{
 .medium{
     border-radius: 10px;
     background-color: rgb(240, 223, 74);
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     width: 8.5em;
     height: 8.5em;
     font-weight: bold;
@@ -189,7 +188,7 @@ body{
 .hard{
     border-radius: 10px;
     background-color: rgb(255, 60, 46);
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     width: 8.5em;
     height: 8.5em;
     font-weight: bold;
@@ -198,7 +197,7 @@ body{
 
 .refresh{
     border-radius: 10px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.467);
     background-color:rgb(255, 255, 255);
     font-family: Ubuntu, sans-serif;
     font-weight: bold;

@@ -122,3 +122,13 @@ document.addEventListener("keyup", function(event) {
     }
 });
 
+function swapStyleSheet() {
+    if (document.getElementById("lightSwitch").checked == true) {
+    document.getElementById("pageStyle").setAttribute('href', "dark.css");
+    
+    } 
+    else {
+    document.getElementById("pageStyle").setAttribute('href', "wordScramble.css");
+    }
+}
+

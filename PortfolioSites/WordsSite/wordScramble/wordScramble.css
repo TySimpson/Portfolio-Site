@@ -1,0 +1,244 @@
+/* Animation Effects */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+@font-face {
+    font-family: "Roobert";
+    src: url('../fonts/RoobertTRIAL-Regular.otf');
+}
+
+@font-face{
+    font-family: "Roobert-Bold";
+    src: url("../fonts/RoobertTRIAL-Bold.otf")
+}
+
+
+h1{
+    font-weight: bold;
+}
+
+body{
+    text-align: center;
+    background-color: white;
+    font-family: Roobert, sans-serif;
+    color: black;
+}
+
+.card{
+    position: block;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    padding: 10px;
+    width: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.card #header{
+    font-weight: bold;
+    color: black;
+    font-size: 18pt;
+    font-family: "Roobert-Bold";
+}
+
+.card #rules{
+    color: black;
+}
+
+.container{
+    padding: 2px 16px;
+}
+
+.btn {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 25%;
+  will-change: transform;
+  font-family: "Roobert-Bold"
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#rules{
+    font-family: Ubuntu, sans-serif;
+
+}
+
+#inputBox{
+    width: 500px;
+    height: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    border-color: black;
+    outline: none;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    border-style: none;
+    font-family: "Roobert"
+}
+
+#feedback{
+    font-size: 50pt;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#wordInputLabel{
+    font-size: 15pt;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.easy{
+    background-color: rgb(81, 216, 81);
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    border-radius: 10px;
+    width: 8.5em;
+    height: 8.5em;
+    font-weight: bold;
+    border-style: hidden;
+}
+
+.play{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    background-color:rgb(255, 255, 255);
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    color: black;
+    height: 2em;
+    width: 15em;
+    font-size: 10pt;
+    border-style: hidden;
+}
+
+.submit{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    background-color:rgb(255, 255, 255);
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    color: black;
+    height: 2em;
+    width: 15em;
+    font-size: 10pt;
+    border-style: hidden;
+}
+
+.medium{
+    border-radius: 10px;
+    background-color: rgb(240, 223, 74);
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    width: 8.5em;
+    height: 8.5em;
+    font-weight: bold;
+    border-style: hidden;
+}
+
+.hard{
+    border-radius: 10px;
+    background-color: rgb(255, 60, 46);
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    width: 8.5em;
+    height: 8.5em;
+    font-weight: bold;
+    border-style: hidden;
+}
+
+.refresh{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    background-color:rgb(255, 255, 255);
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    color: black;
+    height: 2em;
+    width: 15em;
+    font-size: 10pt;
+    border-style: hidden;
+    padding: 0;
+}
+
+#wordScrambleButton{
+    text-decoration: none;
+    width: 50em;
+    height: 5em;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(93, 53, 121);
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+#wordScrambleButton:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#countdown{
+    margin: 0;
+}
+
+#scrambledWord{
+    font-family: "Roobert-Bold";
+}
+
+#results{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.footer{
+    height: 2.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(105, 105, 105);
+}

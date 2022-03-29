@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Ty Simpson - Full Stack Developer</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
 </head>
+
 <body>
-    <h1 class="header">Ty Simpson</h1>
-    <h4>Full Stack Developer</h4>
+    <!-- NavBar Section -->
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End Navbar Section -->
+
+    <!-- Welcome Content -->
+
+    <section id="welcome-section" class="welcome-section">
+        <h1>Ty Simpson</h1>
+        <p>&lt; Full Stack Developer /&gt;</p>
+    </section>
+
+    <!-- End Welcome Content -->
+
+    <!-- For Projects Section -->
+    <section id="projects" class="projects-section">
+        <h1 class="projects-section-header">Take a look at some of my projects:</h1>
+
+        <div class="projects-grid">
+            <!-- Project Tile Format -->
+            <a href="PortfolioSites/WordsSite/wordScramble/wordScramble.html" target="_blank" class="project project-tile">
+                <img class="project-image" src="media/WordScrambleProject.gif" alt="words project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Word Scramble Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="PortfolioSites/WordsSite/index.html" target="_blank" class="project project-tile">
+                <img class="project-image" src="media/Word%20Scramble.png" alt="words project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Words Inc.
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="PortfolioSites/WordsSite/index.html" target="_blank" class="project project-tile">
+                <img class="project-image" src="media/Word%20Scramble.png" alt="words project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Words Inc.
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="PortfolioSites/WordsSite/index.html" target="_blank" class="project project-tile">
+                <img class="project-image" src="media/Word%20Scramble.png" alt="words project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Words Inc.
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <!-- End Project Tile Format -->
+
+        </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contacts Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+
+            <a id="profile-link" href="https://github.com/TySimpson" target="_blank" class="btn contact-details">
+                <i class="fab fa-github"></i> Github
+            </a>
+
+            <a href="tyalexandersimpson@gmail.com" class="btn contact-details">
+                <i class="fas fa-at"></i> E-mail
+            </a>
+
+            <a href="tel:315-842-1120" class="btn contact-details">
+                <i class="fas fa-mobile-alt"></i> Call me
+            </a>
+        </div>
+    </section>
+    <!-- End Contacts Section -->
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Thanks for taking a look at my portfolio! I hope some of my skills can be of use to you!</p>
+    </footer>
+    <!-- End Footer Section -->
 
 </body>
 </html>

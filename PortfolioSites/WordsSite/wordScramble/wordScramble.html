@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Word Scrambler</title>
+    <link rel="stylesheet" href="wordScramble.css">
+</head>
+
+<body>
+    <!-- Rules Introduction -->
+    <div class="card header">
+        <header id="header">WORD SCRAMBLE</header>
+        <p id="rules">Rules: Once you hit the PLAY button, a scrambled word will show up on the screen, you must try to "un-scramble" the word in 15 seconds or you fail.
+        <br> You only get ONE chance to submit your answer, make sure its right!</p>
+    </div>
+
+    <!-- End Rules Introduction -->
+
+    <!-- Difficulty Selection -->
+    <p id="difficultySelect">Difficulty:<br>Set Difficulty</b></p>
+
+    <div class="buttonList">
+        <button class="btn easy" id="easy" onclick="difficulty = 'easy'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Easy'">Easy</button>
+        <button class="btn medium"id="medium" onclick="difficulty = 'medium'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Medium'">Medium</button>
+        <button class="btn hard"id="hard" onclick="difficulty = 'hard'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Hard'">Hard</button><br><br>
+    </div>
+    <!-- End Difficulty Selection -->   
+    <button class="btn play" id="play" onclick="play()">PLAY</button>
+    <p id="streak">Streak: 0</p>
+    <p id="countdown"></p>
+
+    <h1 class="noselect" id = "scrambledWord"></h1>
+    <input type="text" id="inputBox" name="input" checked="true" autocomplete="off"><br><br>
+
+    <h1 id="results"></h1>
+    <button class="btn submit" id="submitButton" type="submit" onclick="checkSubmission()">SUBMIT</button>
+    <button class="btn refresh" id="refreshButton" type="submit" onclick="window.location.reload()">TRY AGAIN</button>
+
+    <footer class="footer">
+        <p>This site is an experimental word scrambler game I created for fun, and I hope it provides you some fun too!</p>
+    </footer>
+
+
+    <script src="wordScramble.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>

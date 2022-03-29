@@ -1,0 +1,194 @@
+
+body{
+    text-align: center;
+    background-color: #222222;
+    font-family: Ubuntu, sans-serif;
+    color: white;
+}
+
+#header{
+    background-color: #121212;
+    display: block;
+    margin-bottom: 0px;
+}
+
+#homeButton{
+    background-color: #121212;
+    color: white;
+    border-radius: 50px;
+    border-style: hidden;
+}
+
+#inputBox{
+    width: 500px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#feedback{
+    font-size: 50pt;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#wordsToGo{
+}
+
+#wordInputLabel{
+    font-size: 15pt;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#wordCounterTitle{
+    font-size: 30pt;
+    color: lightskyblue;
+    margin-bottom: 0px;
+}
+
+#buttonEasy{
+    background-color: darkseagreen;
+    border-radius: 10px;
+    width: 5em;
+    height: 5em;
+    border-style: hidden;
+}
+
+#playButton{
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    width: 5em;
+    height: 2em;
+    color: white;
+    font-weight: bold;
+}
+
+#submitButton{
+    border-radius: 10px;
+    background-color: white;
+    width: 7em;
+    height: 3em;
+}
+
+#buttonEasy:focus{
+    -webkit-box-shadow: inset 0 0 30px black;
+    -moz-box-shadow: inset 0 0 30px black;
+    box-shadow: inset 0 0 30px black;
+}
+
+#buttonMedium{
+    border-radius: 10px;
+    background-color: khaki;
+    width: 5em;
+    height: 5em;
+    border-style: hidden;
+}
+#buttonMedium:focus{
+    -webkit-box-shadow: inset 0 0 30px black;
+    -moz-box-shadow: inset 0 0 30px black;
+    box-shadow: inset 0 0 30px black;
+}
+#buttonHard{
+    border-radius: 10px;
+    background-color: #FD5E53;
+    width: 5em;
+    height: 5em;
+    border-style: hidden;
+}
+#buttonHard:focus{
+    -webkit-box-shadow: inset 0 0 30px black;
+    -moz-box-shadow: inset 0 0 30px black;
+    box-shadow: inset 0 0 30px black
+}
+
+#refreshButton{
+    border-radius: 10px;
+    background-color: black;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    color: white;
+    height: 5em;
+    width: 5em;
+    border-style: hidden;
+}
+
+#rules{
+    align-content: center;
+    font-family: Ubuntu, sans-serif;
+    width: 40em;
+    padding-left: 27.5%;
+}
+
+#welcomeHeader{
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("https://i.gifer.com/1Fvo.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#wordCounterButton{
+    text-decoration: none;
+    width: 50em;
+    height: 5em;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(93, 53, 121);
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+#wordCounterButton:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#wordScrambleButton{
+    text-decoration: none;
+    width: 50em;
+    height: 5em;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(93, 53, 121);
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+#wordScrambleButton:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#testimonialsTitle{
+    font-size: 20pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#disclaimer{
+    margin-top: 0px;
+}
+
+#einsteinTestimonial{
+    width: 300px;
+    display: block;
+    margin-left: 20em;
+}
+#testimonialImage{
+    width: 300px;
+}
+
+#edgarTestimonial{
+    display: inline-block;
+    margin-right: 2em;
+}
+
+h1{
+    font-weight: bold;
+}

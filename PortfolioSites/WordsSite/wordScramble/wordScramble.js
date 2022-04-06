@@ -123,12 +123,12 @@ document.addEventListener("keyup", function(event) {
 });
 
 function swapStyleSheet() {
-    if (document.getElementById("lightSwitch").checked == true) {
-    document.getElementById("pageStyle").setAttribute('href', "dark.css");
-    
-    } 
-    else {
-    document.getElementById("pageStyle").setAttribute('href', "wordScramble.css");
+    if (document.getElementById("lightSwitch").checked == false || localStorage.getItem("mode") == "light") {
+        document.getElementById("pageStyle").setAttribute('href', "dark.css");
+        localStorage.setItem("mode", "dark");
     }
+    else if(document.getElementById("lightSwitch").checked == true || localStorage.getItem("mode") == "dark"){
+        document.getElementById("pageStyle").setAttribute('href', "wordScramble.css");
+        localStorage.setItem("mode", "light");
+    } 
 }
-

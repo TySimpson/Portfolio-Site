@@ -33,7 +33,8 @@ body{
 
 #lightSwitch{
     float: right;
-
+    display: flex;
+    position: fixed;
 }
 
 .card{
@@ -44,8 +45,7 @@ body{
     box-shadow: 0 0 20px 8px #d0d0d0;
     padding: 10px;
     width: auto;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: auto;
 }
 
 .card #header{

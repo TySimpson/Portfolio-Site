@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Word Scrambler</title>
-    <link id = "pageStyle" rel="stylesheet" href="wordScramble.css">
+    <link id = "pageStyle" rel="stylesheet" href="dark.css">
 </head>
 
 <body>
-    <input class="lightSwitchFunction" onclick="swapStyleSheet()" id="lightSwitch" type="checkbox" name="lightSwitch">
+    <div id="#modeSwitcher">
+        <input class="lightSwitchFunction" onclick="swapStyleSheet()" id="lightSwitch" type="checkbox" name="lightSwitch">
+    </div>
     <!-- Rules Introduction -->
     <div class="container card header">
         <header id="header">WORD SCRAMBLE</header>
@@ -18,25 +20,28 @@
 
     <!-- End Rules Introduction -->
 
-    <!-- Difficulty Selection -->
-    <p id="difficultySelect">Difficulty:<br>Set Difficulty</b></p>
 
-    <div class="buttonList">
-        <button class="btn easy" id="easy" onclick="difficulty = 'easy'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Easy'">Easy</button>
-        <button class="btn medium"id="medium" onclick="difficulty = 'medium'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Medium'">Medium</button>
-        <button class="btn hard"id="hard" onclick="difficulty = 'hard'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Hard'">Hard</button><br><br>
-    </div>
-    <!-- End Difficulty Selection -->   
-    <button class="btn play" id="play" onclick="play()">PLAY</button>
-    <p id="streak">Streak: 0</p>
-    <p id="countdown"></p>
-
-    <h1 class="noselect" id = "scrambledWord"></h1>
-    <input type="text" id="inputBox" name="input" checked="true" autocomplete="off"><br><br>
-
-    <h1 id="results"></h1>
-    <button class="btn submit" id="submitButton" type="submit" onclick="checkSubmission()">SUBMIT</button>
-    <button class="btn refresh" id="refreshButton" type="submit" onclick="window.location.reload()">TRY AGAIN</button>
+    <section id="game">
+         <!-- GAME BUTTONS -->
+         <p id="difficultySelect">Difficulty:<br>Set Difficulty</b></p>
+         <div class="buttonList">
+             <button class="btn easy" id="easy" onclick="difficulty = 'easy'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Easy'">Easy</button>
+             <button class="btn medium"id="medium" onclick="difficulty = 'medium'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Medium'">Medium</button>
+             <button class="btn hard"id="hard" onclick="difficulty = 'hard'; document.getElementById('difficultySelect').innerHTML = 'Difficulty:<br><b> Hard'">Hard</button><br><br>
+         </div>
+        <!-- END GAME BUTTONS -->
+        
+        <button class="btn play" id="play" onclick="play()">PLAY</button>
+        <p id="streak">Streak: 0</p>
+        <p id="countdown"></p>
+    
+        <h1 class="noselect" id = "scrambledWord"></h1>
+        <input type="text" id="inputBox" name="input" checked="true" autocomplete="off"><br><br>
+    
+        <h1 id="results"></h1>
+        <button class="btn submit" id="submitButton" type="submit" onclick="checkSubmission()">SUBMIT</button>
+        <button class="btn refresh" id="refreshButton" type="submit" onclick="window.location.reload()">TRY AGAIN</button>
+    </section>
 
     <footer class="footer">
         <p>This site is an experimental word scrambler game I created for fun, and I hope it provides you some fun too!</p>
